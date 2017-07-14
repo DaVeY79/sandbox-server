@@ -12,6 +12,8 @@ const registrations = {};
 const chats = [];
 const locations = [];
 
+app.use('/static', express.static('static'));
+
 app.post('/users', function(req, res) {
   const { username, email, registerNumber, classSem } = req.body;
   if (registrations[username]) {
