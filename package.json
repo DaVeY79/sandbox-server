@@ -1,0 +1,19 @@
+{
+  "name": "sandbox-server",
+  "version": "1.0.0",
+  "description": "demo repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nihalgonsalves/sandbox-server.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nihalgonsalves/sandbox-server/issues"
+  },
+  "homepage": "https://github.com/nihalgonsalves/sandbox-server#readme"
+}
