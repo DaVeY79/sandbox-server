@@ -8,19 +8,16 @@ app.get('/', function (req, res) {
   res.send('Hello Sandbox!');
 });
 
-const registrations = {};
+const registrations = [];
 const chats = [];
 const locations = [];
 
 app.use('/static', express.static('static'));
 
 app.post('/users', function(req, res) {
-  const { username, email, registerNumber, classSem } = req.body;
-  if (registrations[username]) {
-    res.status(400).json({ error: 'Already registered' });
-  }
-  registrations[username] = { username, email, registerNumber, classSem };
-  res.json({ message: 'Thank you!', username });
+  const { username } = req.body;
+  registrations.push({ username });
+  res.json({ message: 'Thank you ' + username + '!', username });
 });
 
 app.get('/users', function(req, res) {
