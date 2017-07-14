@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/nihalgonsalves/sandbox-server/issues"
   },
-  "homepage": "https://github.com/nihalgonsalves/sandbox-server#readme"
+  "homepage": "https://github.com/nihalgonsalves/sandbox-server#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
 }
