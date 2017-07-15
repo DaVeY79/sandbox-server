@@ -10,7 +10,7 @@
 		{
 			"name": "Get Users",
 			"request": {
-				"url": "http://localhost:3000/users",
+				"url": "http://localhost:5000/users",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -21,7 +21,7 @@
 		{
 			"name": "Register a User",
 			"request": {
-				"url": "http://localhost:3000/users",
+				"url": "http://localhost:5000/users",
 				"method": "POST",
 				"header": [
 					{
@@ -41,7 +41,7 @@
 		{
 			"name": "Get Chats",
 			"request": {
-				"url": "http://localhost:3000/chats",
+				"url": "http://localhost:5000/chats",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -52,7 +52,7 @@
 		{
 			"name": "Send a Chat",
 			"request": {
-				"url": "http://localhost:3000/chats",
+				"url": "http://localhost:5000/chats",
 				"method": "POST",
 				"header": [
 					{
@@ -72,7 +72,7 @@
 		{
 			"name": "Get Locations",
 			"request": {
-				"url": "http://localhost:3000/locations",
+				"url": "http://localhost:5000/locations",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -83,7 +83,7 @@
 		{
 			"name": "Share a location",
 			"request": {
-				"url": "http://localhost:3000/locations",
+				"url": "http://localhost:5000/locations",
 				"method": "POST",
 				"header": [
 					{
