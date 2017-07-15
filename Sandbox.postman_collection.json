@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Sandbox",
+		"_postman_id": "cae3ab80-af5c-4cca-7feb-fa48e40985c2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register a User",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"nihalgonsalves\",\n\t\"email\": \"me@nihalgonsalv.es\",\n\t\"registerNumber\": 1540210,\n\t\"classSem\": \"5CMS\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Chats",
+			"request": {
+				"url": "http://localhost:3000/chats",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send a Chat",
+			"request": {
+				"url": "http://localhost:3000/chats",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"nihalgonsalves\",\n\t\"message\": \"Hey guys!\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Locations",
+			"request": {
+				"url": "http://localhost:3000/locations",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Share a location",
+			"request": {
+				"url": "http://localhost:3000/locations",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"nihalgonsalves\",\n\t\"latitude\": 15.483669,\n\t\"longitude\": 73.807376,\n\t\"message\": \"It's better in Goa!\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
