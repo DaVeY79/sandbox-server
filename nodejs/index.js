@@ -49,6 +49,6 @@ app.get('/locations', function (req, res) {
   res.json(locations);
 });
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 5000, function () {
   console.log('sandbox-server is now running');
 });
