@@ -12,6 +12,11 @@ const registrations = [];
 const chats = [];
 const locations = [];
 
+app.use(function (req, res, next) {
+  console.log(req.method + ' ' + req.originalUrl + ' ' + JSON.stringify(req.body));
+  next();
+});
+
 app.use('/static', express.static('static'));
 
 app.post('/users', function(req, res) {
@@ -45,5 +50,5 @@ app.get('/locations', function (req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log('Sandbox listening on port 3000!');
+  console.log('sandbox-server is now running');
 });
